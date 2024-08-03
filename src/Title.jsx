@@ -1,5 +1,9 @@
-function Title() {
-  return <h1 className="title">Fancy Counter</h1>;
+function Title({ locked }) {
+  return (
+    <h1 className="title">
+      {locked ? 'count limit reached' : 'Fancy Counter'}
+    </h1>
+  );
 }
 
 export default Title;
