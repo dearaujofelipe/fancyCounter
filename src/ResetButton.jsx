@@ -1,8 +1,9 @@
 import { ResetIcon } from '@radix-ui/react-icons';
 
 function ResetButton({ setCount }) {
-  const handleClick = () => {
+  const handleClick = (e) => {
     setCount(0);
+    e.currentTarget.blur();
   };
 
   return (
